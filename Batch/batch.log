@@ -1,0 +1,8 @@
+2020-09-11 13:32:00.729 +08:00 [INF] Validation Errors for US-2015-108966
+2020-09-11 13:32:00.753 +08:00 [INF] 'PRODUC T_ ID' must not be empty.
+2020-09-11 13:32:00.755 +08:00 [INF] Validation Errors for 
+2020-09-11 13:32:00.755 +08:00 [INF] 'ORDE R_ ID' must not be empty.
+2020-09-11 13:32:02.883 +08:00 [INF] SQL Operation failed in ImportData()
+2020-09-11 13:32:02.893 +08:00 [INF] Exception in ProcessData()
+2020-09-11 13:32:02.893 +08:00 [INF] Violation of UNIQUE KEY constraint 'UQ__STORE_OR__1CE12D360B58B4B8'. Cannot insert duplicate key in object 'dbo.STORE_ORDER'. The duplicate key value is (BH-11710).
+The statement has been terminated.
