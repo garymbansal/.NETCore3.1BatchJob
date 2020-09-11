@@ -11,9 +11,16 @@
 Normally, in case of CSV Import, we first import data in raw format in DB in a staging table and then process the data from there to main data table with all validations enforced.
 But there may be a scenario where we need to put validations before import
 This is where FluentValidation package comes in handy.
+```
+ RuleFor(x => x.ORDER_ID).NotEmpty().MaximumLength(20);
+ ```
 
 ### Csv Processing with [CsvHelper](https://joshclose.github.io/CsvHelper/)
 To process CSV file with more enhanced capapbilities and control.
+```
+ Map(m=> m.ID).Ignore();
+ Map(m=> m.ORDER_ID).Name("Order ID");
+```            
 
 ### Logging with [Serilog](https://serilog.net/)
 Logging has been implemented using Serilog with all logs written on a local file for every exception & wherever needed.
